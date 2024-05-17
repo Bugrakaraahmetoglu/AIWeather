@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.BugraKStudios.AIWeather.fragments.onBoarding.OnBoardingTwoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/onboarding_background">
+
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chatbot_img"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:src="@drawable/weather_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t know what to \nwear today?"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter"
+                android:textStyle="italic"/>
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="165dp"
+                android:layout_height="220dp"
+                android:src="@drawable/think"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get suggestions \nbased on your local \nweather."
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter"
+                android:textStyle="italic"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nxt_btn"
+                android:layout_width="265dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/btn_bg"
+                android:text="Next"
+                android:letterSpacing="0.1"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
